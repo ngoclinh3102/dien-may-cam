@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #4b6584;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.box {
+    border-radius: 24px;
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fd9644;
+}

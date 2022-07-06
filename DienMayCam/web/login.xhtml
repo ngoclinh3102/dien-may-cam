@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Login</title>
+    <link rel="stylesheet" href="resources/css/login.css"/>
+</h:head>
+<h:body>
+    <h:form styleClass="box">
+        <p:growl id="growl" showDetail="true" />
+        <h1>ĐĂNG NHẬP</h1>
+        <div>
+            <p:inputText id="username" value="#{LoginBean.loginName}"
+                         required="true"
+                         placeholder="tên đăng nhập" />
+        </div>
+        <div>
+            <p:password id="password"
+                        value="#{LoginBean.loginPwd}"
+                        required="true"
+                        toggleMask="true"
+                        redisplay="true"
+                        placeholder="nhập mật khẩu"/>
+        </div>
+        <div style="alignment: center">
+            <div>
+                <p:commandButton value="ĐĂNG NHẬP" action="#{LoginBean.login}" update="growl" />
+            </div>
+            <div>
+                <p:linkButton value="Quên mật khẩu?" outcome="forgot-password" styleClass="ui-button-flat" />
+            </div>
+        </div>
+    </h:form>
+</h:body>
+</html>

@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="ProductManager:war exploded2">
+    <output-path>$PROJECT_DIR$/ProductManager/product-manager</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ProductManager" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="myLib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ProductManager/web/Web" />
+    </root>
+  </artifact>
+</component>
